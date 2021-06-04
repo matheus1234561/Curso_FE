@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Secao from './Secao';
+
+export default class App
+  extends React.Component {
+  render() {
+    return (<div>
+      <Secao
+        titulo="Secao 1"
+        descricao="Testando descrição 1."
+      />
+
+      <Secao
+        titulo="Secao 2"
+        descricao="Testando descrição 2."
+      />
+    </div>)
+  }
 }
-
-export default App;
