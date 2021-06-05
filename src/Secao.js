@@ -20,22 +20,14 @@ export default class Secao
 
     render() {
         return (
-            <div style={{
-                display: 'flex',
-                flex: '1',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: '100vh',
-                gap: '15px'
-            }}>
-                <p>{process.env.REACT_APP_TESTE}</p>
+            <div className="body">
+                <p className="p">{process.env.REACT_APP_TESTE}</p>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <input onChange={e => this.handleInput1(e)} type="numeric" placeholder="Valor 1" />
-                    <input onChange={e => this.handleInput2(e)} type="numeric" placeholder="Valor 2" />
+                    <input className="input" onChange={e => this.handleInput1(e)} type="numeric" placeholder="Valor 1" />
+                    <input className="input" onChange={e => this.handleInput2(e)} type="numeric" placeholder="Valor 2" />
                 </div>
-                <button className="button" onClick={() => this.sum()} />
-                <p>{this.state.result}</p>
+                <button className="button" onClick={() => this.sum()}>Somar</button>
+                <p className="p">{this.state.result}</p>
             </div>
 
 
