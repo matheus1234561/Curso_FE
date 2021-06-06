@@ -23,8 +23,8 @@ export default class Secao
             <div className="body">
                 <p className="p">{process.env.REACT_APP_TESTE}</p>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <input className="input" onChange={e => this.handleInput1(e)} type="numeric" placeholder="Valor 1" />
-                    <input className="input" onChange={e => this.handleInput2(e)} type="numeric" placeholder="Valor 2" />
+                    <input className="input" onChange={e => this.handleInput1(e)} type="numeric" />
+                    <input className="input" onChange={e => this.handleInput2(e)} type="numeric" />
                 </div>
                 <button className="button" onClick={() => this.sum()}>Somar</button>
                 <p className="p">{this.state.result}</p>

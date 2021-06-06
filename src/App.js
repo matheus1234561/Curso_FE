@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Secao from './Secao';
+import Secao from './secao/Secao';
 
 export default class App
   extends React.Component {
